@@ -20,3 +20,10 @@ execute as @a at @a if block ~ ~-0.01 ~ mud run kill @s
 execute as @a at @a if block ~ ~-0.01 ~ muddy_mangrove_roots run kill @s
 execute as @a at @a if block ~ ~-0.01 ~ sculk run kill @s
 execute as @a at @a if block ~ ~-0.01 ~ basalt run kill @s
+execute as @a at @a if block ~ ~-0.01 ~ snow_layer run kill @s
+execute as @a at @a if block ~ ~-0.01 ~ sculk_catalyst run kill @s
+execute as @a at @a if block ~ ~-0.01 ~ sculk_sensor run kill @s
+execute as @a at @a if block ~ ~-0.01 ~ sculk_shrieker run kill @s
+execute as @a at @a if block ~ ~-0.01 ~ calibrated_sculk_sensor run kill @s
+execute as @a at @a if block ~ ~-0.01 ~ polished_basalt run kill @s
+execute as @a at @a if block ~ ~-0.01 ~ hardened_clay run kill @s
