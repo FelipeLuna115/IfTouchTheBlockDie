@@ -7,3 +7,5 @@ execute as @a at @a if block ~ ~-0.01 ~ magma run kill @s
 execute as @a at @a if block ~ ~-0.01 ~ netherrack run kill @s
 execute as @a at @a if block ~ ~-0.01 ~ end_stone run kill @s
 execute as @a at @a if block ~ ~-0.01 ~ basalt run kill @s
+execute as @a at @a if block ~ ~-0.01 ~ polished_basalt run kill @s
+execute as @a at @a if block ~ ~-0.01 ~ hardened_clay run kill @s
