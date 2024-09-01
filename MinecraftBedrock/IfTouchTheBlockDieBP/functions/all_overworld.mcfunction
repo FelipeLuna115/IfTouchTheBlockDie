@@ -1,0 +1,15 @@
+execute @s ~ ~ ~ detect ~ ~-0.01 ~ ice 0 kill @s
+execute @s ~ ~ ~ detect ~ ~-0.01 ~ packed_ice 0 kill @s
+execute @s ~ ~ ~ detect ~ ~-0.01 ~ blue_ice 0 kill @s
+execute @s ~ ~ ~ detect ~ ~-0.01 ~ clay 0 kill @s
+execute @s ~ ~ ~ detect ~ ~-0.01 ~ deepslate 0 kill @s
+execute @s ~ ~ ~ detect ~ ~-0.01 ~ dirt 0 kill @s
+execute @s ~ ~ ~ detect ~ ~-0.01 ~ grass 0 kill @s
+execute @s ~ ~ ~ detect ~ ~-0.01 ~ gravel 0 kill @s
+execute @s ~ ~ ~ detect ~ ~-0.01 ~ sand 0 kill @s
+execute @s ~ ~ ~ detect ~ ~-0.01 ~ snow 0 kill @s
+execute @s ~ ~ ~ detect ~ ~-0.01 ~ stone 0 kill @s
+execute @s ~ ~ ~ detect ~ ~-0.01 ~ mud 0 kill @s
+execute @s ~ ~ ~ detect ~ ~-0.01 ~ muddy_mangrove_roots 0 kill @s
+execute @s ~ ~ ~ detect ~ ~-0.01 ~ deepslate 0 kill @s
+execute @s ~ ~ ~ detect ~ ~-0.01 ~ sculk 0 kill @s

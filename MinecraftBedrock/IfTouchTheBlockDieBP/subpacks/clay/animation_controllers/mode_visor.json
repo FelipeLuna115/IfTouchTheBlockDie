@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.mode_visor": {
+			"initial_state": "alive",
+			"states": {
+				"alive": {
+					"transitions": [
+						{
+							"dead": "!query.is_alive"
+						}
+					],
+					"on_entry": [
+						"/title @s title §l§1Clay",
+						"/title @s subtitle If you touch the clay, die"
+					]
+				},
+				"dead": {
+					"transitions": [
+						{
+							"alive": "query.is_alive"
+						}
+					]
+				}
+			}
+		}
+	}
+}
