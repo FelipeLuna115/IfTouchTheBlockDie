@@ -1,0 +1,9 @@
+execute as @a at @a if block ~ ~-0.01 ~ ice run kill @s
+execute as @a at @a if block ~ ~-0.01 ~ packed_ice run kill @s
+execute as @a at @a if block ~ ~-0.01 ~ blue_ice run kill @s
+execute as @a at @a if block ~ ~-0.01 ~ deepslate run kill @s
+execute as @a at @a if block ~ ~-0.01 ~ stone run kill @s
+execute as @a at @a if block ~ ~-0.01 ~ magma run kill @s
+execute as @a at @a if block ~ ~-0.01 ~ netherrack run kill @s
+execute as @a at @a if block ~ ~-0.01 ~ end_stone run kill @s
+execute as @a at @a if block ~ ~-0.01 ~ basalt run kill @s
