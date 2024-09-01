@@ -10,8 +10,9 @@
 							"dead": "!query.is_alive"
 						}
 					],
-					"on_exit": [
-						"/function spawn"
+					"on_entry": [
+						"/function spawn",
+						"/function spawned"
 					]
 				},
 				"dead": {

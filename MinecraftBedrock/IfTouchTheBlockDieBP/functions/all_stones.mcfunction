@@ -1,9 +1,0 @@
-execute @s ~ ~ ~ detect ~ ~-0.01 ~ ice 0 kill @s
-execute @s ~ ~ ~ detect ~ ~-0.01 ~ packed_ice 0 kill @s
-execute @s ~ ~ ~ detect ~ ~-0.01 ~ blue_ice 0 kill @s
-execute @s ~ ~ ~ detect ~ ~-0.01 ~ deepslate 0 kill @s
-execute @s ~ ~ ~ detect ~ ~-0.01 ~ stone 0 kill @s
-execute @s ~ ~ ~ detect ~ ~-0.01 ~ magma 0 kill @s
-execute @s ~ ~ ~ detect ~ ~-0.01 ~ netherrack 0 kill @s
-execute @s ~ ~ ~ detect ~ ~-0.01 ~ end_stone 0 kill @s
-execute @s ~ ~ ~ detect ~ ~-0.01 ~ basalt 0 kill @s
