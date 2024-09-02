@@ -1,0 +1,1 @@
+execute as @a at @a if block ~ ~-0.01 ~ minecraft:gravel run kill @s
