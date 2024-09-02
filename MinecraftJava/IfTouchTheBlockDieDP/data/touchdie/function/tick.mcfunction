@@ -1,0 +1,16 @@
+execute as @a if score $game_mode game_mode matches 1 run function touchdie:all_blocks
+execute as @a if score $game_mode game_mode matches 2 run function touchdie:all_nether
+execute as @a if score $game_mode game_mode matches 3 run function touchdie:all_overworld
+execute as @a if score $game_mode game_mode matches 4 run function touchdie:all_dirts
+execute as @a if score $game_mode game_mode matches 5 run function touchdie:all_stones
+execute as @a if score $game_mode game_mode matches 6 run function touchdie:basalt
+execute as @a if score $game_mode game_mode matches 7 run function touchdie:clay
+execute as @a if score $game_mode game_mode matches 8 run function touchdie:crimson
+execute as @a if score $game_mode game_mode matches 9 run function touchdie:deepslate
+execute as @a if score $game_mode game_mode matches 10 run function touchdie:dirt
+execute as @a if score $game_mode game_mode matches 11 run function touchdie:endstone
+execute as @a if score $game_mode game_mode matches 12 run function touchdie:grass
+execute as @a if score $game_mode game_mode matches 13 run function touchdie:gravel
+execute as @a if score $game_mode game_mode matches 14 run function touchdie:ice
+execute as @a if score $game_mode game_mode matches 15 run function touchdie:magma
+execute as @a if score @s death matches 1.. run function touchdie:mode_visor
