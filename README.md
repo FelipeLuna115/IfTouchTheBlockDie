@@ -15,6 +15,10 @@ You can see the different testing and release versions by using the "test" and "
 
 About the Add-on/datapack...
 
+NOTE: The .mcaddon file is for Minecraft Bedrock and it contains the needed behaviour and resources pack (if needed).
+The DP and RP files (which ends on .zip both) are for Minecraft Java, which are the DataPack file and Resouces Pack
+file (if needed, too).
+
 The Add-on for Minecraft Bedrock can be used on Minecraft 1.21+ and it's tested on Minecraft 1.21.21 (Windows).
 
 The datapack for Minecraft Java can be used on Minecraft 1.21+ and it's tested on Minecraft 1.21 (Windows, Minecraft bundled java) with optifine (HD_U_I1_pre2).
