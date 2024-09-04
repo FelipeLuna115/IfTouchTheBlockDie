@@ -1,7 +1,11 @@
 .mcattributes
 .vscode/
 <<<<<<< HEAD
+<<<<<<< HEAD
 /output
 =======
 /output
 >>>>>>> 17efb3a (promote to testing (#2))
+=======
+/output
+>>>>>>> 2b903ae (update gitignore)
