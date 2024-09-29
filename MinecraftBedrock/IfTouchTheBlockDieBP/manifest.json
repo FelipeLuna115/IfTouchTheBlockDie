@@ -5,7 +5,7 @@
     "min_engine_version": [ 1, 21, 0 ],
     "name": "If you touch the block, §4die",
     "uuid": "2a1b2ec1-9033-402a-96f5-183ae4e80eea",
-    "version": [ 1, 2, 4 ]
+    "version": [ 1, 2, 10 ]
   },
   "metadata": {
     "authors": [
@@ -19,7 +19,7 @@
       "description": "If you touch the selected block, §4you'll die.\n§rMod by: §1L§2u§3n§4a§51§61§85",
       "type": "data",
       "uuid": "2a1b2ec1-9033-402a-96f5-183ae4e80eaf",
-      "version": [ 1, 2, 4 ]
+      "version": [ 1, 2, 10 ]
     }
   ],
   "subpacks": [
