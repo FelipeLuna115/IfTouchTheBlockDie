@@ -13,4 +13,7 @@ execute as @a if score $game_mode game_mode matches 12 run function touchdie:gra
 execute as @a if score $game_mode game_mode matches 13 run function touchdie:gravel
 execute as @a if score $game_mode game_mode matches 14 run function touchdie:ice
 execute as @a if score $game_mode game_mode matches 15 run function touchdie:magma
+execute as @a[scores={change_mode=1..}] if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_model_data":1}}}] run function afunc:change_next_mode
+execute as @a[scores={change_mode=1..}] if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_model_data":2}}}] run function afunc:change_prev_mode
+execute as @a[scores={change_mode=1..}] if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_model_data":3}}}] run function afunc:reset_mode
 execute as @a if score @s death matches 1.. run function touchdie:mode_visor
