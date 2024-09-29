@@ -1,4 +1,5 @@
 execute as @a run function afunc:aconfig_tools
+function touchdie:spawn
 
 execute as @s if score $game_mode game_mode matches 1 run title @s title "§l§4All blocks"
 execute as @s if score $game_mode game_mode matches 1 run title @s subtitle "If you touch any natural block, you'll die"
