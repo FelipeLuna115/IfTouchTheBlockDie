@@ -1,3 +1,6 @@
+execute as @a run function afunc:aconfig_tools
+function touchdie:spawn
+
 execute as @s if score $game_mode game_mode matches 1 run title @s title "§l§4All blocks"
 execute as @s if score $game_mode game_mode matches 1 run title @s subtitle "If you touch any natural block, you'll die"
 execute as @s if score $game_mode game_mode matches 1 run tellraw @s "Blocks that you can't step on: ice normal, packed and blue, clay, deepslate, dirt, grass, gravel, sand, snow, snow layers, stone, magma block, netherrack, soul sand and soil, end stone"

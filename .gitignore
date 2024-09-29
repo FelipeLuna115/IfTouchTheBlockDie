@@ -1,3 +1,7 @@
 .mcattributes
 .vscode/
+<<<<<<< HEAD
 /output
+=======
+/output
+>>>>>>> 17efb3a (promote to testing (#2))
