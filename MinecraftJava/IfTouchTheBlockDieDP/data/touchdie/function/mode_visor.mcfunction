@@ -1,5 +1,8 @@
 execute as @a run function afunc:aconfig_tools
+<<<<<<< HEAD
 function touchdie:spawn
+=======
+>>>>>>> 95a9ac1 (added logic and items to change game mode with the texture pack for MC JA)
 
 execute as @s if score $game_mode game_mode matches 1 run title @s title "§l§4All blocks"
 execute as @s if score $game_mode game_mode matches 1 run title @s subtitle "If you touch any natural block, you'll die"
