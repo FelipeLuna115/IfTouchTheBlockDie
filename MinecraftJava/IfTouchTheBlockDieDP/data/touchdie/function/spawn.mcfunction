@@ -4,5 +4,6 @@ setblock 0 125 0 minecraft:water
 setworldspawn 0 126 1
 scoreboard objectives add death deathCount
 scoreboard objectives add game_mode dummy
+scoreboard objectives add change_mode minecraft.used:minecraft.carrot_on_a_stick
 execute unless score $game_mode game_mode matches 1..25 run scoreboard players set $game_mode game_mode 1
-execute as @a run function touchdie:mode_visor
+gamerule keepInventory true
