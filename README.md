@@ -1,9 +1,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1f8d528 (updated Readne.md)
 This is the official github repo of the "If touch the block, die" datapack/add-on developed by Luna115.
 
 This Add-on/datapack consist on making to the players unable to step on a list of specific blocks, and if they step on
 it, kill them instantly.
+<<<<<<< HEAD
 
 This is the GitHub pages branch, which is the branch that stores the web page of the Add-on/DataPack.
 =======
@@ -14,6 +18,8 @@ This is the official github repo of the "If touch the block, die" datapack/add-o
 
 This Add-on/datapack consist on making to the players unable to step on a list of specific blocks, and if they step on
 it, kill them instantly.
+=======
+>>>>>>> 1f8d528 (updated Readne.md)
 
 About the repo...
 
