@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 execute as @a at @a if block ~ ~-0.01 ~ minecraft:clay run kill @s
 execute as @a at @a if block ~ ~-0.01 ~ minecraft:terracotta run kill @s
 execute as @a at @a if block ~ ~-0.01 ~ minecraft:red_terracotta run kill @s
@@ -16,3 +17,23 @@ execute as @a at @a if block ~ ~-0.01 ~ minecraft:yellow_terracotta run kill @s
 execute as @a at @a if block ~ ~-0.01 ~ minecraft:magenta_terracotta run kill @s
 execute as @a at @a if block ~ ~-0.01 ~ minecraft:light_blue_terracotta run kill @s
 execute as @a at @a if block ~ ~-0.01 ~ minecraft:light_gray_terracotta run kill @s
+=======
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:clay run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:red_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:blue_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:cyan_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:gray_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:lime_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:pink_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:black_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:brown_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:green_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:white_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:orange_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:purple_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:yellow_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:magenta_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:light_blue_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:light_gray_terracotta run kill @s
+>>>>>>> origin/development

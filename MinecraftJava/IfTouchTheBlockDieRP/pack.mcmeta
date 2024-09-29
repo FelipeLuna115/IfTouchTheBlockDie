@@ -3,7 +3,11 @@
     "pack_format": 34,
     "description": [
       {
+<<<<<<< HEAD
         "text": "(This is the RP)"
+=======
+        "text": "(This is the RP v1.2.11)"
+>>>>>>> origin/development
       },
       {
         "text": "If you touch the selected block, §4you'll die."

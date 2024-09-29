@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 execute as @a at @a if block ~ ~-0.01 ~ minecraft:ice run kill @s
 execute as @a at @a if block ~ ~-0.01 ~ minecraft:packed_ice run kill @s
 execute as @a at @a if block ~ ~-0.01 ~ minecraft:blue_ice run kill @s
@@ -36,3 +37,43 @@ execute as @a at @a if block ~ ~-0.01 ~ minecraft:yellow_terracotta run kill @s
 execute as @a at @a if block ~ ~-0.01 ~ minecraft:magenta_terracotta run kill @s
 execute as @a at @a if block ~ ~-0.01 ~ minecraft:light_blue_terracotta run kill @s
 execute as @a at @a if block ~ ~-0.01 ~ minecraft:light_gray_terracotta run kill @s
+=======
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:ice run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:packed_ice run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:blue_ice run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:clay run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:deepslate run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:dirt run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:grass_block run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:gravel run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:sand run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:snow_block run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:stone run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:mud run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:muddy_mangrove_roots run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:sculk run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:snow run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:sculk_catalyst run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:sculk_sensor run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:sculk_shrieker run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:calibrated_sculk_sensor run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:polished_basalt run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:red_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:blue_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:cyan_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:gray_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:lime_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:pink_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:black_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:brown_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:green_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:white_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:orange_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:purple_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:yellow_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:magenta_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:light_blue_terracotta run kill @s
+execute as @a at @s if block ~ ~-0.01 ~ minecraft:light_gray_terracotta run kill @s
+>>>>>>> origin/development
