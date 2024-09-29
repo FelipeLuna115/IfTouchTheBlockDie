@@ -1,7 +1,7 @@
-This is the official github repo of the "If touch the block, die" datapack/add-on developed by Li Cubito.
+This is the official github repo of the "If touch the block, die" datapack/add-on developed by Luna115.
 
 This Add-on/datapack consist on making to the players unable to step on a list of specific blocks, and if they step on
-it, kil them instantly.
+it, kill them instantly.
 
 About the repo...
 
