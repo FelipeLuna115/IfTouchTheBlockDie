@@ -1,1 +1,0 @@
-execute as @a at @s if block ~ ~-0.01 ~ crimson_nylium run kill @s
