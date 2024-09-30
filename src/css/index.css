@@ -3,6 +3,13 @@
     src: url(../font/minecraft-ten.ttf);
 }
 
+.pointer {
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
 html {
     background-image: url(../img/stone.png);
     overflow-x: hidden;
@@ -12,7 +19,7 @@ html {
 nav {
     position: fixed;
     top: 0;
-    background-color: #c4906e;
+    background-image: url(../img/dirt.png);
     min-height: 10vh;
     width: 101vw;
     font-size: 100%;
