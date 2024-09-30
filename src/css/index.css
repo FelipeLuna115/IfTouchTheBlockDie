@@ -1,10 +1,10 @@
 @font-face {
     font-family: "Minecraft";
-    src: url(/src/font/minecraft-ten.ttf);
+    src: url(./src/font/minecraft-ten.ttf);
 }
 
 html {
-    background-image: url(/src/img/stone.png);
+    background-image: url(./src/img/stone.png);
     overflow-x: hidden;
     font-family: "minecraft", Arial, Helvetica, sans-serif;
 }
