@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "Minecraft";
+    src: url(/src/font/minecraft-ten.ttf);
+}
+
+html {
+    background-image: url(/src/img/stone.png);
+    overflow-x: hidden;
+    font-family: "minecraft", Arial, Helvetica, sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    background-color: #c4906e;
+    min-height: 10vh;
+    width: 101vw;
+    font-size: 100%;
+    margin: 0 0 0 -1vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+}
+
+.content {
+    font-weight: 100;
+    font-size: 90%;
+    margin-top: 13vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background-color: rgba(214, 214, 214, 0.541);
+    border-radius: 5%;
+    border: solid rgba(0, 0, 0, 0.5) 2px;
+    min-height: 30vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.icon {
+    height: 5vh;
+    width: 5vw;
+    image-rendering: pixelated;
+}
+
+.subtitle {
+    color: #030F68;
+}
+
+.bold {
+    font-weight: 900;
+    font-size: 110%;
+}
+
+.content section {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.flex-right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    width: 98vw;
+    height: 95vh;
+    aspect-ratio: 1;
+    --g1: conic-gradient(from 90deg at 3px 3px, #0000 90deg, #fff 0);
+    --g2: conic-gradient(from -90deg at 22px 22px, #0000 90deg, #fff 0);
+    background: var(--g1), var(--g1), var(--g1), var(--g2), var(--g2), var(--g2);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    animation: l7 1.5s infinite;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  @keyframes l7 {
+    0%   {background-position:0    0   ,0 100%,100% 100% }
+    25%  {background-position:100% 0   ,0 100%,100% 100% }
+    50%  {background-position:100% 0   ,0 0   ,100% 100% }
+    75%  {background-position:100% 0   ,0 0   ,0    100% }
+    100% {background-position:100% 100%,0 0   ,0    100% }
+  }

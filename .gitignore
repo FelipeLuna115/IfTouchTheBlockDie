@@ -1,2 +1,3 @@
-.mcattibutes
-.vscode
+.mcattributes
+.vscode/
+/output
