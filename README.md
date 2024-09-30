@@ -21,6 +21,7 @@ it, kill them instantly.
 =======
 >>>>>>> 1f8d528 (updated Readne.md)
 
+<<<<<<< HEAD
 About the repo...
 
 On the "development" branch you can find the currently working code.
@@ -43,3 +44,6 @@ The datapack for Minecraft Java can be used on Minecraft 1.21+ and it's tested o
 
 That's all, enjoy the Add-on or datapack, remember that are made as almost the same for both platforms, so feel free to enjoy it on your prefered version of Minecraft :)
 >>>>>>> 6a76657 (Create README.md)
+=======
+This is the GitHub pages branch, which is the branch that stores the web page of the Add-on/DataPack.
+>>>>>>> f6bc80c (Initial commit to gh-pages)

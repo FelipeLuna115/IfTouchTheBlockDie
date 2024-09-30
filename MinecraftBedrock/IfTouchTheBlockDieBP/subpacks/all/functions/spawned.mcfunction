@@ -1,3 +1,0 @@
-title @s title §l§4All blocks
-title @s subtitle If you touch any natural block, you'll die
-msg @s Blocks that you can't step on: ice, packed ice, blue ice, clay, deepslate, dirt, grass, gravel, sand, snow, snow layers, stone, magma block, netherrack, soul sand and soil, end stone, crimson and warped nylium, mud, muddy mangrove roots, sculk, basalt normal and polished, sculk catalyst, sculk sensor normal and calibrated, sculk shrieker, terracotta

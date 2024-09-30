@@ -1,1 +1,0 @@
-execute as @a at @s if block ~ ~-0.01 ~ minecraft:end_stone run kill @s
