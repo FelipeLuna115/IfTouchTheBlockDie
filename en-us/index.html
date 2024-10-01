@@ -9,14 +9,60 @@
 </head>
 <body>
     <nav>
-        <span onclick="Goto('#')" class="flex-right pointer">
+        <span onclick="ChangeNavbarStatus()" class="flex-right pointer hover-color">
             <img src="../src/img/pack_icon.png" alt="mod icon" class="icon">
             <h1>If Touch The Block, die</h1>
         </span>
-        <a onclick="Goto('#aboutAddon')" class="pointer">About</a>
-        <a onclick="Goto('#gameModes')" class="pointer">Game modes</a>
+        <span id="navbarElements" onclick="ChangeNavbarStatus()" hidden>
+            <a onclick="Goto('#aboutAddon')" class="pointer hover-color">About</a>
+            <span class="with-subsections">
+                <a onclick="Goto('#howToConfigure')" class="pointer hover-color">How to configure</a>
+                <ul class="subsection">
+                    <li>
+                        <a onclick="Goto('#minecraftBedrockConfig')" class="pointer hover-color">Minecraft Bedrock</a>
+                    </li>
+                    <li>
+                        <a onclick="Goto('#minecraftJavaConfig')" class="pointer hover-color">Minecraft Java</a>
+                    </li>
+                </ul>
+            </span>
+            <span class="with-subsections">
+                <a onclick="Goto('#gameModes')" class="pointer hover-color">Game modes</a>
+                <ul class="subsection">
+                    <li>
+                        <a onclick="Goto('#allBlocks')" class="pointer hover-color">All blocks</a>
+                    </li>
+                    <li>
+                        <a onclick="Goto('#allOverworld')" class="pointer hover-color">All overworld</a>
+                    </li>
+                    <li>
+                        <a onclick="Goto('#allNether')" class="pointer hover-color">All nether</a>
+                    </li>
+                    <li>
+                        <a onclick="Goto('#allDirts')" class="pointer hover-color">All dirts</a>
+                    </li>
+                    <li>
+                        <a onclick="Goto('#allStones')" class="pointer hover-color">All stones</a>
+                    </li>
+                    <li>
+                        <a onclick="Goto('#individualBlocks')" class="pointer hover-color">Individual blocks</a>
+                    </li>
+                </ul>
+            </span>
+            <span class="with-subsections">
+                <a onclick="Goto('#notes')" class="pointer hover-color">Notes</a>
+                <ul class="subsection">
+                    <li>
+                        <a onclick="Goto('#spawnNote')" class="pointer hover-color">While spawning...</a>
+                    </li>
+                    <li>
+                        <a onclick="Goto('#parityNote')" class="pointer hover-color">Parity...</a>
+                    </li>
+                </ul>
+            </span>
+        </span>
     </nav>
-    <div class="content">
+    <div class="content" onclick="HiddeNavbar()">
         <section>
             <h2 id="aboutAddon" class="flex-center subtitle">About the Add-on / DataPack</h2>
             <p>
@@ -29,13 +75,108 @@
             </p>
         </section>
         <section>
+            <h2 class="subtitle flex-center" id="howToConfigure">How to configure the mod</h2>
+            <p>
+                The Minecraft mod can be configured, but the way to configure it is different on both
+                platforms, below I'll explain how you can configure it for each version.
+            </p>
+            <h3 class="subtitle" id="minecraftBedrockConfig">Minecraft Bedrock</h3>
+            <p>
+                To configure this Add-on for Minecraft Bedrock, you need to go to the settings area for the Add-on,
+                which is on the "behaviour pack" section, and on the "settings" option on the Add-on.
+            </p>
+            <figure class="img-fig">
+                <img class="img pointer" src="../src/img/mod-config-bedrock-1.png" onclick="OpenDocument('../src/img/mod-config-bedrock-1.png')" alt="Minecraft Bedrock behaviour packs section screenshot">
+                <figcaption>
+                    Minecraft Bedrock behaviour packs section.
+                </figcaption>
+            </figure>
+            <p>
+                While you click the "settings" icon, a window will open with a slider, on this slider you can change
+                the game mode of the Add-on (crimson nylium by default). Just slide the slider to change the mode.
+            </p>
+            <figure class="img-fig">
+                <img class="img pointer" src="../src/img/mod-config-bedrock-2.png" onclick="OpenDocument('../src/img/mod-config-bedrock-2.png')" alt="Minecraft Bedrock add-on config slider screenshot">
+                <figcaption>
+                    Minecraft Bedrock Add-on config slider.
+                </figcaption>
+            </figure>
+            <p>
+                <span class="important">Note:</span>
+                For the correct Add-on working, you need to enable two experimental features (experiments):
+                <ul>
+                    <li>Upcoming Creator Features</li>
+                    <li>Beta APIs</li>
+                </ul>
+                <figure class="img-fig">
+                    <img class="img pointer" src="../src/img/mod-config-bedrock-3.png" onclick="OpenDocument('../src/img/mod-config-bedrock-3.png')" alt="Minecraft Bedrock experimental features needed screenshot">
+                    <figcaption>
+                        Minecraft Bedrock experimental features needed.
+                    </figcaption>
+                </figure>
+            </p>
+            <br><br><br>
+            <h3 class="subtitle" id="minecraftJavaConfig">Minecraft Java</h3>
+            <p>
+                The Minecraft Java DataPack can be configured just in-game with custom items that you receive
+                while spawning. To receive this items you need to have empty the hotbar slots 9, 8, and 7.
+            </p>
+            <figure class="img-fig">
+                <img class="img pointer" src="../src/img/mod-config-java-1.png" onclick="OpenDocument('../src/img/mod-config-java-1.png')" alt="Minecraft Java config items - in-game screenshot">
+                <figcaption>
+                    Minecraft Java config items.
+                </figcaption>
+            </figure>
+            <p>
+                <span class="subtitle">Prev game mode:</span>
+                with this item you can change to the game mode before (numerically) the active.
+            </p>
+            <figure class="img-fig">
+                <img class="img pointer" src="../src/img/mod-config-java-2.png" onclick="OpenDocument('../src/img/mod-config-java-2.png')" alt="Minecraft Java previous game mode item - in-game screenshot">
+                <figcaption>
+                    Minecraft Java previous game mode item.
+                </figcaption>
+            </figure>
+            <p>
+                <span class="subtitle">Reset game mode:</span>
+                With this item you can set the game mode to the first one (numerically): "All blocks".
+            </p>
+            <figure class="img-fig">
+                <img class="img pointer" src="../src/img/mod-config-java-3.png" onclick="OpenDocument('../src/img/mod-config-java-3.png')" alt="Minecraft Java reset game mode item - in-game screenshot">
+                <figcaption>
+                    Minecraft Java reset game mode item.
+                </figcaption>
+            </figure>
+            <p>
+                <span class="subtitle">Next game mode:</span>
+                With this item you can change to the game mode after (numerically) the active.
+            </p>
+            <figure class="img-fig">
+                <img class="img pointer" src="../src/img/mod-config-java-4.png" onclick="OpenDocument('../src/img/mod-config-java-4.png')" alt="Minecraft Java next game mode item - in-game screenshot">
+                <figcaption>
+                    Minecraft Java next game mode item.
+                </figcaption>
+            </figure>
+            <p>
+                <span class="important">Note:</span>
+                For a better experience, you have to enable the resources pack, which is included on the downloads
+                for Minecraft Java too.
+            </p>
+            <figure class="img-fig">
+                <img class="img pointer" src="../src/img/mod-config-java-5.png" onclick="OpenDocument('../src/img/mod-config-java-5.png')" alt="Minecraft Java resources pack active screenshot">
+                <figcaption>
+                    Minecraft Java resources pack active.
+                </figcaption>
+            </figure>
+        </section>
+        <section>
             <h2 id="gameModes" class="flex-center subtitle">Game Modes</h2>
             <p>
                 This Minecraft Mod contains 24 available game modes that you can choose. This are the game modes:
             </p>
             <ul>
                 <li>
-                    <span class="bold subtitle">All Blocks:</span> This mode contains all the available blocks on the
+                    <span id="allBlocks" class="bold subtitle">All Blocks:</span> This mode contains all the available blocks on the
                     Minecraft Mod, which are:
                     <ol>
                         <li>Magma</li><li>Netherrack</li><li>Soul Sand</li><li>Soul Soil</li><li>Crimson nyliym</li><li>Warped nylium</li>
@@ -45,7 +186,7 @@
                     </ol>
                 </li>
                 <li>
-                    <span class="bold subtitle">All Overworld:</span> This mode contains all the available blocks on
+                    <span id="allOverworld" class="bold subtitle">All Overworld:</span> This mode contains all the available blocks on
                     the Minecraft Mod that spawns naturally on overworld, which are:
                     <ol>
                         <li>Ice</li><li>Packed Ice</li><li>Blue Ice</li><li>Clay</li><li>Deepslate</li><li>Dirt</li><li>Grass</li><li>Coarse Dirt</li>
@@ -54,7 +195,7 @@
                     </ol>
                 </li>
                 <li>
-                    <span class="bold subtitle">All Nether:</span> This mode contains all the available blocks on the
+                    <span id="allNether" class="bold subtitle">All Nether:</span> This mode contains all the available blocks on the
                     Minecraft Mod that spawns naturally on nether, which are:
                     <ol>
                         <li>Magma</li><li>Netherrack</li><li>Soul Sand</li><li>Soul Soil</li><li>Crimson nyliym</li>
@@ -62,7 +203,7 @@
                     </ol>
                 </li>
                 <li>
-                    <span class="bold subtitle">All Dirts:</span> This mode contains all the available "dirt-type"
+                    <span id="allDirts" class="bold subtitle">All Dirts:</span> This mode contains all the available "dirt-type"
                     blocks on the Minecraft Mod that spawns naturally, which are:
                     <ol>
                         <li>Soul Sand</li><li>Soul Soil</li><li>Crimson nyliym</li><li>Warped nylium</li>
@@ -72,7 +213,7 @@
                     </ol>
                 </li>
                 <li>
-                    <span class="bold subtitle">All Stones:</span> This mode contains all the available "stone-type"
+                    <span id="allStones" class="bold subtitle">All Stones:</span> This mode contains all the available "stone-type"
                     blocks on the Minecraft Mod that spawns naturally, which are:
                     <ol>
                         <li>Magma</li><li>Netherrack</li><li>Ice</li><li>Packed Ice</li><li>Blue Ice</li>
@@ -81,7 +222,7 @@
                     </ol>
                 </li>
                 <li>
-                    <span class="bold subtitle">A mode for every block:</span> This mode contains each available block
+                    <span id="individualBlocks" class="bold subtitle">A mode for every block:</span> This mode contains each available block
                     on the Minecraft Mod itself, with no more blocks, for example, the grass mode contains just the
                     grass block, but there are some exceptions that includes more blocks of the same type:
                     <ol>
@@ -100,6 +241,32 @@
                     </ol>
                 </li>
             </ul>
+        </section>
+        <section>
+            <h2 id="notes" class="important">Notes:</h2>
+            <p>
+                On this section you'll se some important notes to consider for while you're
+                playing the Minecraft Mod.
+            </p>
+            <h3 id="spawnNote" class="subtitle">While spawning...</h3>
+            <p>
+                If the choosen mode is one in which the usual blocks where you spawn, like grass, dirt, etc.
+                are listed to kill you, you'll die while you spawn, but for avoiding an infinite loop of death,
+                on the 0 125 0 coordinate, a wooden platform is created, and your spawn point is moved to that platform.
+                That platform is iluminated and has a column of water for descending.
+            </p>
+            <figure class="img-fig">
+                <img class="img pointer" src="../src/img/spawn-point.png" onclick="OpenDocument('../src/img/spawn-point.png')" alt="Wooden platform on both Minecraft Versions screenshot">
+                <figcaption>
+                    Wooden platform on both Minecraft Versions.
+                </figcaption>
+            </figure>
+            <h3 id="parityNote" class="subtitle">Parity...</h3>
+            <p>
+                I did my best for making the Add-on and DataPack work as the same, but it isn't completely possible
+                as both versions are different, so, some little changes exists there, but they almost don't affect
+                the game experience.
+            </p>
         </section>
     </div>
     <script src="../src/js/index.js"></script>

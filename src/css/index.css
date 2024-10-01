@@ -10,6 +10,10 @@
     touch-action: manipulation;
 }
 
+.hover-color:hover {
+    background-color: rgba(255, 153, 0, 0.363);
+}
+
 html {
     background-image: url(../img/stone.png);
     overflow-x: hidden;
@@ -22,7 +26,7 @@ nav {
     background-image: url(../img/dirt.png);
     min-height: 10vh;
     width: 101vw;
-    font-size: 100%;
+    font-size: 150%;
     margin: 0 0 0 -1vw;
     display: flex;
     flex-wrap: wrap;
@@ -34,7 +38,6 @@ nav {
 .content {
     font-weight: 100;
     font-size: 90%;
-    margin-top: 13vh;
     margin-left: 5vw;
     margin-right: 5vw;
     background-color: rgba(214, 214, 214, 0.541);
@@ -46,14 +49,38 @@ nav {
     flex-direction: column;
 }
 
+.with-subsections {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.with-subsections .subsection {
+    font-size: 50%;
+}
+
 .icon {
     height: 5vh;
     width: 5vw;
     image-rendering: pixelated;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+h1 {
+    font-size: 120%;
 }
 
 .subtitle {
     color: #030F68;
+}
+
+.important {
+    color: rgb(126, 0, 0);
 }
 
 .bold {
@@ -64,6 +91,26 @@ nav {
 .content section {
     margin-left: 2vw;
     margin-right: 2vw;
+}
+
+.img {
+    width: 100%;
+    min-height: 10vh;
+    max-height: 80vh;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+.img-fig {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 80%;
+    font-weight: 100;
 }
 
 .flex-right {
