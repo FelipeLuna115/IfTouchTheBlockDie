@@ -60,6 +60,20 @@
                     </li>
                 </ul>
             </span>
+            <span class="with-subsections">
+                <a onclick="Goto('#downloads')" class="pointer hover-color">Downloads</a>
+                <ul class="subsection">
+                    <li>
+                        <a onclick="Goto('#lastest')" class="pointer hover-color">Latest version (1.2.11)</a>
+                    </li>
+                    <li>
+                        <a onclick="Goto('#v1p2p10')" class="pointer hover-color">version 1.2.10</a>
+                    </li>
+                    <li>
+                        <a onclick="Goto('#v1p2p4')" class="pointer hover-color">version 1.2.4</a>
+                    </li>
+                </ul>
+            </span>
         </span>
     </nav>
     <div class="content" onclick="HiddeNavbar()">
@@ -70,30 +84,31 @@
                 Mod from now).
             </p>
             <p>
-                This Minecraft Mod is a minigame in which you can't step on the selected list of blocks depending
-                on the game mode you selected, and if you step on an unallowed block, you'll instantly die.
+                This Minecraft Mod is a minigame where you can't step on a selected list of blocks,
+                depending on the game mode you choose.
+                If you step on a forbidden block, you'll instantly die.
             </p>
         </section>
         <section>
             <h2 class="subtitle flex-center" id="howToConfigure">How to configure the mod</h2>
             <p>
-                The Minecraft mod can be configured, but the way to configure it is different on both
-                platforms, below I'll explain how you can configure it for each version.
+                The Minecraft Mod can be configured differently on each platform.
+                Below, I'll explain how to configure it for each version.
             </p>
             <h3 class="subtitle" id="minecraftBedrockConfig">Minecraft Bedrock</h3>
             <p>
-                To configure this Add-on for Minecraft Bedrock, you need to go to the settings area for the Add-on,
-                which is on the "behaviour pack" section, and on the "settings" option on the Add-on.
+                To configure this Add-on for Minecraft Bedrock, go to the settings area under the
+                "behavior pack" section and select the "settings" option for the Add-on.
             </p>
             <figure class="img-fig">
-                <img class="img pointer" src="../src/img/mod-config-bedrock-1.png" onclick="OpenDocument('../src/img/mod-config-bedrock-1.png')" alt="Minecraft Bedrock behaviour packs section screenshot">
+                <img class="img pointer" src="../src/img/mod-config-bedrock-1.png" onclick="OpenDocument('../src/img/mod-config-bedrock-1.png')" alt="Minecraft Bedrock behavior packs section screenshot">
                 <figcaption>
-                    Minecraft Bedrock behaviour packs section.
+                    Minecraft Bedrock behavior packs section.
                 </figcaption>
             </figure>
             <p>
-                While you click the "settings" icon, a window will open with a slider, on this slider you can change
-                the game mode of the Add-on (crimson nylium by default). Just slide the slider to change the mode.
+                When you click the "settings" icon, a window will open with a slider.
+                You can use this slider to change the game mode of the Add-on (crimson nylium by default).
             </p>
             <figure class="img-fig">
                 <img class="img pointer" src="../src/img/mod-config-bedrock-2.png" onclick="OpenDocument('../src/img/mod-config-bedrock-2.png')" alt="Minecraft Bedrock add-on config slider screenshot">
@@ -103,23 +118,23 @@
             </figure>
             <p>
                 <span class="important">Note:</span>
-                For the correct Add-on working, you need to enable two experimental features (experiments):
+                For the Add-on to work correctly, you need to enable two experimental features (experiments):
                 <ul>
                     <li>Upcoming Creator Features</li>
                     <li>Beta APIs</li>
                 </ul>
                 <figure class="img-fig">
-                    <img class="img pointer" src="../src/img/mod-config-bedrock-3.png" onclick="OpenDocument('../src/img/mod-config-bedrock-3.png')" alt="Minecraft Bedrock experimental features needed screenshot">
+                    <img class="img pointer" src="../src/img/mod-config-bedrock-3.png" onclick="OpenDocument('../src/img/mod-config-bedrock-3.png')" alt="Minecraft Bedrock experimental features required screenshot">
                     <figcaption>
-                        Minecraft Bedrock experimental features needed.
+                        Minecraft Bedrock experimental features required.
                     </figcaption>
                 </figure>
             </p>
             <br><br><br>
             <h3 class="subtitle" id="minecraftJavaConfig">Minecraft Java</h3>
             <p>
-                The Minecraft Java DataPack can be configured just in-game with custom items that you receive
-                while spawning. To receive this items you need to have empty the hotbar slots 9, 8, and 7.
+                The Minecraft Java DataPack can only be configured in-game using custom items that you receive
+                upon spawning. To get these items, hotbar slots 9, 8, and 7 must be empty.
             </p>
             <figure class="img-fig">
                 <img class="img pointer" src="../src/img/mod-config-java-1.png" onclick="OpenDocument('../src/img/mod-config-java-1.png')" alt="Minecraft Java config items - in-game screenshot">
@@ -129,7 +144,7 @@
             </figure>
             <p>
                 <span class="subtitle">Prev game mode:</span>
-                with this item you can change to the game mode before (numerically) the active.
+                This item allows you to change to the previous game mode (numerically).
             </p>
             <figure class="img-fig">
                 <img class="img pointer" src="../src/img/mod-config-java-2.png" onclick="OpenDocument('../src/img/mod-config-java-2.png')" alt="Minecraft Java previous game mode item - in-game screenshot">
@@ -139,7 +154,7 @@
             </figure>
             <p>
                 <span class="subtitle">Reset game mode:</span>
-                With this item you can set the game mode to the first one (numerically): "All blocks".
+                This item resets the game mode to the first one (numerically): "All Blocks."
             </p>
             <figure class="img-fig">
                 <img class="img pointer" src="../src/img/mod-config-java-3.png" onclick="OpenDocument('../src/img/mod-config-java-3.png')" alt="Minecraft Java reset game mode item - in-game screenshot">
@@ -149,7 +164,7 @@
             </figure>
             <p>
                 <span class="subtitle">Next game mode:</span>
-                With this item you can change to the game mode after (numerically) the active.
+                This item allows you to switch to the next game mode (numerically).
             </p>
             <figure class="img-fig">
                 <img class="img pointer" src="../src/img/mod-config-java-4.png" onclick="OpenDocument('../src/img/mod-config-java-4.png')" alt="Minecraft Java next game mode item - in-game screenshot">
@@ -159,8 +174,8 @@
             </figure>
             <p>
                 <span class="important">Note:</span>
-                For a better experience, you have to enable the resources pack, which is included on the downloads
-                for Minecraft Java too.
+                For a better experience, you should enable the resource pack,
+                which is included in the downloads for Minecraft Java.
             </p>
             <figure class="img-fig">
                 <img class="img pointer" src="../src/img/mod-config-java-5.png" onclick="OpenDocument('../src/img/mod-config-java-5.png')" alt="Minecraft Java resources pack active screenshot">
@@ -172,7 +187,7 @@
         <section>
             <h2 id="gameModes" class="flex-center subtitle">Game Modes</h2>
             <p>
-                This Minecraft Mod contains 24 available game modes that you can choose. This are the game modes:
+                This Minecraft Mod includes 24 available game modes to choose from. These are the game modes:
             </p>
             <ul>
                 <li>
@@ -245,30 +260,116 @@
         <section>
             <h2 id="notes" class="important">Notes:</h2>
             <p>
-                On this section you'll se some important notes to consider for while you're
-                playing the Minecraft Mod.
+                In this section, you'll find important notes to consider while playing the Minecraft Mod.
             </p>
             <h3 id="spawnNote" class="subtitle">While spawning...</h3>
             <p>
-                If the choosen mode is one in which the usual blocks where you spawn, like grass, dirt, etc.
-                are listed to kill you, you'll die while you spawn, but for avoiding an infinite loop of death,
-                on the 0 125 0 coordinate, a wooden platform is created, and your spawn point is moved to that platform.
+                If the chosen mode includes blocks where you usually spawn, like grass or dirt, as kill blocks,
+                you'll die upon spawning. To avoid an infinite loop of death, a wooden platform will be created at
+                coordinates 0 125 0, and your spawn point will be moved there.
                 That platform is iluminated and has a column of water for descending.
             </p>
             <figure class="img-fig">
-                <img class="img pointer" src="../src/img/spawn-point.png" onclick="OpenDocument('../src/img/spawn-point.png')" alt="Wooden platform on both Minecraft Versions screenshot">
+                <img class="img pointer" src="../src/img/spawn-point.png" onclick="OpenDocument('../src/img/spawn-point.png')" alt="Wooden platform in both Minecraft Versions screenshot">
                 <figcaption>
-                    Wooden platform on both Minecraft Versions.
+                    Wooden platform in both Minecraft Versions.
                 </figcaption>
             </figure>
             <h3 id="parityNote" class="subtitle">Parity...</h3>
             <p>
-                I did my best for making the Add-on and DataPack work as the same, but it isn't completely possible
-                as both versions are different, so, some little changes exists there, but they almost don't affect
-                the game experience.
+                I did my best to make the Add-on and DataPack work the same, but due to differences between the versions,
+                there are minor changes that don't significantly affect the game experience.
             </p>
         </section>
+        <section>
+            <h2 id="downloads" class="subtitle">Downloads</h2>
+            <p>
+                Download here "If touch the block, die" Minecraft Mod!
+            </p>
+            <div>
+                <h3 id="lastest" class="subtitle">Lastest version - version 1.2.11 (test):</h3>
+                <ul>
+                    <li>
+                        Source code:
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/archive/refs/tags/v1.2.11-test.zip">GitHub Download</a> -
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/tag/v1.2.11-test">GitHub release</a> -
+                        <a target="_blank" href="https://n9.cl/0pq77">Ads Download</a>
+                    </li>
+                    <li>
+                        Minecraft Bedrock Add-on:
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/download/v1.2.11-test/IfTouchTheBlockDie-v1.2.11.mcaddon">GitHub Download</a> -
+                        <a target="_blank" href="https://n9.cl/znrwz">Ads download</a>
+                    </li>
+                    <li>
+                        Minecraft Java DataPack:
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/download/v1.2.11-test/IfTouchTheBlockDieDP-v1.2.11.zip">GitHub download</a> -
+                        <a target="_blank" href="https://n9.cl/nuc44">Ads download</a>
+                    </li>
+                    <li>
+                        Minecraft Java Resources Pack:
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/download/v1.2.11-test/IfTouchTheBlockDieRP-v1.2.11.zip">GitHub download</a> -
+                        <a target="_blank" href="https://n9.cl/e8rpc">Ads download</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 id="v1p2p10" class="subtitle">Version 1.2.10 (test):</h3>
+                <ul>
+                    <li>
+                        Source code:
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/archive/refs/tags/v1.2.10-test.zip">GitHub Download</a> -
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/tag/v1.2.10-test">GitHub release</a> -
+                        <a target="_blank" href="https://n9.cl/h0dqf">Ads Download</a>
+                    </li>
+                    <li>
+                        Minecraft Bedrock Add-on:
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/download/v1.2.10-test/IfTouchTheBlockDie-v1.2.10.mcaddon">GitHub Download</a> -
+                        <a target="_blank" href="https://n9.cl/q214d">Ads download</a>
+                    </li>
+                    <li>
+                        Minecraft Java DataPack:
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/download/v1.2.10-test/IfTouchTheBlockDieDP-v1.2.10.zip">GitHub download</a> -
+                        <a target="_blank" href="https://n9.cl/ivl7n">Ads download</a>
+                    </li>
+                    <li>
+                        Minecraft Java Resources Pack:
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/download/v1.2.10-test/IfTouchTheBlockDieRP-v1.2.10.zip">GitHub download</a> -
+                        <a target="_blank" href="https://n9.cl/o1fj1">Ads download</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 id="v1p2p4" class="subtitle">Version 1.2.4 (test):</h3>
+                <ul>
+                    <li>
+                        Source code:
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/archive/refs/tags/v1.2.4-test.zip">GitHub Download</a> -
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/tag/v1.2.4-test">GitHub release</a> -
+                        <a target="_blank" href="https://n9.cl/4qqiw">Ads Download</a>
+                    </li>
+                    <li>
+                        Minecraft Bedrock Add-on:
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/download/v1.2.4-test/IfTouchTheBlockDie-v1.2.4.mcaddon">GitHub Download</a> -
+                        <a target="_blank" href="https://n9.cl/ykp2i">Ads download</a>
+                    </li>
+                    <li>
+                        Minecraft Java DataPack:
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/download/v1.2.4-test/IfTouchTheBlockDieDP-v1.2.4.zip">GitHub download</a> -
+                        <a target="_blank" href="https://n9.cl/fwpi2x">Ads download</a>
+                    </li>
+                    <li>
+                        Minecraft Java Resources Pack: <a href="">not available</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </div>
+    <script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script>
+    <script>linkvertise(359782, {
+        whitelist: [
+            "https://n9.cl/"
+        ],
+        blacklist: []});</script>
     <script src="../src/js/index.js"></script>
 </body>
 </html>

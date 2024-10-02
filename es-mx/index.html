@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devHielo-width, initial-scale=1.0">
+    <title>Si tocas el bloque, mueres</title>
+    <link rel="shortcut icon" href="../src/img/pack_icon.png">
+    <link rel="stylesheet" href="../src/css/index.css">
+</head>
+<body>
+    <nav>
+        <span onclick="ChangeNavbarStatus()" class="flex-right pointer hover-color">
+            <img src="../src/img/pack_icon.png" alt="mod icon" class="icon">
+            <h1>Si tocas el bloque, mueres</h1>
+        </span>
+        <span id="navbarElements" onclick="ChangeNavbarStatus()" hidden>
+            <a onclick="Goto('#aboutAddon')" class="pointer hover-color">Acerca de</a>
+            <span class="with-subsections">
+                <a onclick="Goto('#howToConfigure')" class="pointer hover-color">Cómo configurar</a>
+                <ul class="subsection">
+                    <li>
+                        <a onclick="Goto('#minecraftBedrockConfig')" class="pointer hover-color">Minecraft Bedrock</a>
+                    </li>
+                    <li>
+                        <a onclick="Goto('#minecraftJavaConfig')" class="pointer hover-color">Minecraft Java</a>
+                    </li>
+                </ul>
+            </span>
+            <span class="with-subsections">
+                <a onclick="Goto('#gameModes')" class="pointer hover-color">Modos de juego</a>
+                <ul class="subsection">
+                    <li>
+                        <a onclick="Goto('#allBlocks')" class="pointer hover-color">Todos los bloques</a>
+                    </li>
+                    <li>
+                        <a onclick="Goto('#allOverworld')" class="pointer hover-color">Toda la superficie</a>
+                    </li>
+                    <li>
+                        <a onclick="Goto('#allNether')" class="pointer hover-color">Todo el inframundo</a>
+                    </li>
+                    <li>
+                        <a onclick="Goto('#allDirts')" class="pointer hover-color">Todas las tierras</a>
+                    </li>
+                    <li>
+                        <a onclick="Goto('#allStones')" class="pointer hover-color">Todas las piedras</a>
+                    </li>
+                    <li>
+                        <a onclick="Goto('#individualBlocks')" class="pointer hover-color">Bloques individuales</a>
+                    </li>
+                </ul>
+            </span>
+            <span class="with-subsections">
+                <a onclick="Goto('#notes')" class="pointer hover-color">Notas</a>
+                <ul class="subsection">
+                    <li>
+                        <a onclick="Goto('#spawnNote')" class="pointer hover-color">Al aparecer...</a>
+                    </li>
+                    <li>
+                        <a onclick="Goto('#parityNote')" class="pointer hover-color">Paridad...</a>
+                    </li>
+                </ul>
+            </span>
+            <span class="with-subsections">
+                <a onclick="Goto('#downloads')" class="pointer hover-color">Descargas</a>
+                <ul class="subsection">
+                    <li>
+                        <a onclick="Goto('#lastest')" class="pointer hover-color">Última versión (1.2.11)</a>
+                    </li>
+                    <li>
+                        <a onclick="Goto('#v1p2p10')" class="pointer hover-color">versión 1.2.10</a>
+                    </li>
+                    <li>
+                        <a onclick="Goto('#v1p2p4')" class="pointer hover-color">versión 1.2.4</a>
+                    </li>
+                </ul>
+            </span>
+        </span>
+    </nav>
+    <div class="content" onclick="HiddeNavbar()">
+        <section>
+            <h2 id="aboutAddon" class="flex-center subtitle">Acerca del complemento / Paquete de datos</h2>
+            <p>
+                "Si tocas el bloque, mueres" es un complemento y paquete de datos para Minecraft Bedrock y
+                Java Edition respectivamente (Modificación de Minecraft a partir de aquí).
+            </p>
+            <p>
+                Esta modificación de Minecraft es un mini juego en el cual no puedes pisar los bloques de una lista
+                especifica, dependiendo del modo de juego que hayas seleccionado.
+                Si pisas un bloque prohibido, morirás instantaneamente.
+            </p>
+        </section>
+        <section>
+            <h2 class="subtitle flex-center" id="howToConfigure">Cómo configurar la modificación</h2>
+            <p>
+                La modificación de Minecraft se configura de forma distinta en cada versión.
+                A continuación, explicaré como configurarla en cada versión.
+            </p>
+            <h3 class="subtitle" id="minecraftBedrockConfig">Minecraft Bedrock</h3>
+            <p>
+                Para configurar el complemento en Minecraft Bedrock, ve a los ajustes de los paquetes de comportamiento
+                y selecciona la opción de "Ajustes" del complemento.
+            </p>
+            <figure class="img-fig">
+                <img class="img pointer" src="../src/img/mod-config-bedrock-1.png" onclick="OpenDocument('../src/img/mod-config-bedrock-1.png')" alt="Captura de pantalla de la sección de los paquetes de comportamiento de Minecraft Bedrock">
+                <figcaption>
+                    Sección de paquetes de comportamiento de Minecraft Bedrock.
+                </figcaption>
+            </figure>
+            <p>
+                Cuando presiones el icono "ajustes", se abrirá una ventana con una barra deslizable.
+                Puedes usar esa barra deslizable para cambiar el modo de juego del complemento
+                (por defecto "crimson nylium" [Necelio carmesí]).
+            </p>
+            <figure class="img-fig">
+                <img class="img pointer" src="../src/img/mod-config-bedrock-2.png" onclick="OpenDocument('../src/img/mod-config-bedrock-2.png')" alt="Captura de pantalla del deslizable para configurar el complemento de Minecraft Bedrock">
+                <figcaption>
+                    Deslizable para configurar el complemento de Minecraft Bedrock.
+                </figcaption>
+            </figure>
+            <p>
+                <span class="important">Nota:</span>
+                Para que el complemento funcione correctamente, necesitas activar dos funciones experimentales
+                (experimentos):
+                <ul>
+                    <li>Próximas funciones para creadores</li>
+                    <li>API Beta</li>
+                </ul>
+                <figure class="img-fig">
+                    <img class="img pointer" src="../src/img/mod-config-bedrock-3.png" onclick="OpenDocument('../src/img/mod-config-bedrock-3.png')" alt="Captura de pantalla de las funciones experimentales requeridas en Minecraft Bedrock">
+                    <figcaption>
+                        Funciones experimentales requeridas en Minecraft Bedrock.
+                    </figcaption>
+                </figure>
+            </p>
+            <br><br><br>
+            <h3 class="subtitle" id="minecraftJavaConfig">Minecraft Java</h3>
+            <p>
+                El paquete de datos de Minecraft Java solo se puede configurar durante la partida uArenao objetos
+                personalizados que recibes cuando apareces en el mundo. Para obtener esos objetos, la barra de
+                acceso rápido tiene que tener libres las ranuras 9, 8, y 7.
+            </p>
+            <figure class="img-fig">
+                <img class="img pointer" src="../src/img/mod-config-java-1.png" onclick="OpenDocument('../src/img/mod-config-java-1.png')" alt="Captura de pantalla de los objetos para configurar el paquete de datos durante la partida en Minecraft Java">
+                <figcaption>
+                    Objetos para configurar el paquete de datos durante la partida en Minecraft Java.
+                </figcaption>
+            </figure>
+            <p>
+                <span class="subtitle">Modo de juego previo:</span>
+                Este objeto te permite cambiar al modo de juego anterior (numéricamente).
+            </p>
+            <figure class="img-fig">
+                <img class="img pointer" src="../src/img/mod-config-java-2.png" onclick="OpenDocument('../src/img/mod-config-java-2.png')" alt="Captura de pantalla del objeto de modo de juego anterior durante la partida en Minecraft Java">
+                <figcaption>
+                    Objeto de modo de juego anterior durante la partida en Minecraft Java.
+                </figcaption>
+            </figure>
+            <p>
+                <span class="subtitle">Reiniciar el modo de juego:</span>
+                Este objeto te permite reiniciar el modo de juego al primero (numéricamente): "All Blocks" (Todos los bloques).
+            </p>
+            <figure class="img-fig">
+                <img class="img pointer" src="../src/img/mod-config-java-3.png" onclick="OpenDocument('../src/img/mod-config-java-3.png')" alt="Captura de pantalla durante el juego del objeto de reinicio del modo de juego en Minecraft Java">
+                <figcaption>
+                    Objeto de reinicio del modo de juego en Minecraft Java.
+                </figcaption>
+            </figure>
+            <p>
+                <span class="subtitle">Siguiente modo de juego:</span>
+                Este objeto te permite cambiar al modo de juego siguiente (numéricamente).
+            </p>
+            <figure class="img-fig">
+                <img class="img pointer" src="../src/img/mod-config-java-4.png" onclick="OpenDocument('../src/img/mod-config-java-4.png')" alt="Captura de pantalla durante el juego del objeto del modo siguiente en Minecraft Java">
+                <figcaption>
+                    Objeto del modo siguiente en Minecraft Java.
+                </figcaption>
+            </figure>
+            <p>
+                <span class="important">Nota:</span>
+                Para una mejor experiencia, deberías de activar el paquete de texturas,
+                el cual esta incluido en las descargas de la versión para Minecraft Java.
+            </p>
+            <figure class="img-fig">
+                <img class="img pointer" src="../src/img/mod-config-java-5.png" onclick="OpenDocument('../src/img/mod-config-java-5.png')" alt="Captura de pantalla de los paquetes de texturas activados en Minecraft Java">
+                <figcaption>
+                    Paquetes de texturas activados en Minecraft Java.
+                </figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2 id="gameModes" class="flex-center subtitle">Modos de juego</h2>
+            <p>
+                Esta modificación para Minecraft contiene 24 modos de juego disponibles.
+                Los modos de juego son los siguientes:
+            </p>
+            <ul>
+                <li>
+                    <span id="allBlocks" class="bold subtitle">"All Blocks" (Todos los bloques):</span>
+                    Este modo de juego contiene todos los bloques disponibles en la modificación de Minecraft y que
+                    aparecen naturalmente, los cuales son:
+                    <ol>
+                        <li>Bloque de magma</li><li>Infiedra</li><li>Arena de almas</li><li>Tierra de almas</li><li>Necelio carmesí</li><li>Necelio deformado</li>
+                        <li>Hielo</li><li>Hielo comprimido</li><li>Hielo azul</li><li>Arcilla</li><li>Pizarra abismal</li><li>Tierra</li><li>Pasto</li><li>Tierra estéril</li>
+                        <li>Grava</li><li>Arena</li><li>Nieve</li><li>Piedra</li><li>Piedra del fin</li><li>Lodo</li><li>Raices de manglar lodozas</li>
+                        <li>Bloques de sculk</li><li>Basalto</li><li>Basalto púlido</li><li>Terracota</li><li>Arena roja</li><li>Capas de nieve</li>
+                    </ol>
+                </li>
+                <li>
+                    <span id="allOverworld" class="bold subtitle">"All Overworld" (Toda la superficie):</span>
+                    Este modo de juego contiene todos los bloques disponibles en la modificación de Minecraft y que
+                    aparecen naturalmente en la superficie, los cuales son:
+                    <ol>
+                        <li>Hielo</li><li>Hielo comprimido</li><li>Hielo azul</li><li>Arcilla</li><li>Pizarra abismal</li><li>Tierra</li><li>Pasto</li><li>Tierra estéril</li>
+                        <li>Grava</li><li>Arena</li><li>Nieve</li><li>Piedra</li><li>Lodo</li><li>Raices de manglar lodozas</li><li>Bloques de sculk</li>
+                        <li>Basalto</li><li>Basalto púlido</li><li>Terracota</li><li>Arena roja</li><li>Capas de nieve</li>
+                    </ol>
+                </li>
+                <li>
+                    <span id="allNether" class="bold subtitle">"All Nether" (Todo el inframundo):</span>
+                    Este modo de juego contiene todos los bloques disponibles en la modificación de Minecraft
+                    y que aparecen naturalmente en el inframundo, los cuales son:
+                    <ol>
+                        <li>Bloque de magma</li><li>Infiedra</li><li>Arena de almas</li><li>Tierra de almas</li><li>Necelio carmesí</li>
+                        <li>Necelio deformado</li><li>Basalto</li><li>Basalto púlido</li>
+                    </ol>
+                </li>
+                <li>
+                    <span id="allDirts" class="bold subtitle">"All Dirts" (Todas las tierras):</span>
+                    Este modo de juego contiene todos los bloques del tipo tierra disponibles en la modificación
+                    de Minecraft y que aparecen naturalmente, los cuales son:
+                    <ol>
+                        <li>Arena de almas</li><li>Tierra de almas</li><li>Necelio carmesí</li><li>Necelio deformado</li>
+                        <li>Arcilla</li><li>Tierra</li><li>Pasto</li><li>Tierra estéril</li>
+                        <li>Grava</li><li>Arena</li><li>Nieve</li><li>Lodo</li><li>Raices de manglar lodozas</li>
+                        <li>Arena roja</li><li>Capas de nieve</li>
+                    </ol>
+                </li>
+                <li>
+                    <span id="allStones" class="bold subtitle">"All Stones" (Todas las piedras):</span>
+                    Este modo de juego contiene todos los bloques del tipo piedra disponibles en la modificación
+                    de Minecraft y que aparecen naturalmente, los cuales son:
+                    <ol>
+                        <li>Bloque de magma</li><li>Infiedra</li><li>Hielo</li><li>Hielo comprimido</li><li>Hielo azul</li>
+                        <li>Pizarra abismal</li><li>Piedra</li><li>Piedra del fin</li>
+                        <li>Basalto</li><li>Basalto púlido</li><li>Terracota</li>
+                    </ol>
+                </li>
+                <li>
+                    <span id="individualBlocks" class="bold subtitle">Un modo de juego para cada bloque:</span>
+                    Este modo de juego contiene cada uno de los bloques disponibles en la modificación de Minecraft
+                    sin ningún otro bloque, por ejemplo, el modo "Grass" (Pasto) solo contiene el bloque de pasto,
+                    pero hay algunas excepciones que incluyen a más bloques del mismo tipo:
+                    <ol>
+                        <li><span class="subtitle">"Mud" (Lodo):</span> Este modo contiene el bloque de Lodo y Raices de manglar lodozas.</li>
+                        <li>
+                            <span class="subtitle">Sculk:</span> Este modo contiene el bloque de sculk, chillador de sculk,
+                            sensor de sculk, sensor de sculk calibrado, y catalizador de sculk.
+                        </li>
+                        <li><span class="subtitle">"Snow" (Nieve):</span> Este modo contiene el bloque de Nieve y las capas de nieve.</li>
+                        <li><span class="subtitle">"Basalt" (Basalto):</span> Este modo contiene el bloque de Basalto y el Basalto púlido.</li>
+                        <li><span class="subtitle">"Dirt" (Tierra):</span> Este modo contiene la tierra y la Tierra estéril.</li>
+                        <li><span class="subtitle">"Clay" (Arcilla):</span> Este modo contiene la arcilla y todas las variantes de la terracota.</li>
+                        <li><span class="subtitle">"Ice" (Hielo):</span> Este modo contiene el bloque de Hielo, Hielo comprimido, y Hielo azul.</li>
+                        <li><span class="subtitle">"Sand" (Arena):</span> Este modo contiene el bloque de Arena y Arena roja.</li>
+                        <li><span class="subtitle">"Stone" (Piedra):</span> Este modo contiene el bloque de Piedra, andesita, granito, y diorita.</li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="notes" class="important">Notas:</h2>
+            <p>
+                En esta sección encontrarás notas importantes que deberías de tomar en cuenta si planeas jugar
+                la modificación de Minecraft.
+            </p>
+            <h3 id="spawnNote" class="subtitle">Al aparecer...</h3>
+            <p>
+                Si el modo elegido incluye bloques donde usualmente apareces, como el bloque de pasto o tierra,
+                en la lista de bloques prohibidos, Morirás al instante. Para evitar un bucle infinito de muerte,
+                se creará una plataforma de madera en las coordenadas 0 125 0, y el punto de generación de tu mundo
+                se moverá allí. Esa plataforma está iluminada y tiene una columna de agua para descender.
+            </p>
+            <figure class="img-fig">
+                <img class="img pointer" src="../src/img/spawn-point.png" onclick="OpenDocument('../src/img/spawn-point.png')" alt="Captura de pantalla de la plataforma de madera en ambas versiones de Minecraft">
+                <figcaption>
+                    Plataforma de madera en ambas versiones de Minecraft.
+                </figcaption>
+            </figure>
+            <h3 id="parityNote" class="subtitle">Paridad...</h3>
+            <p>
+                Hice todo lo posible para que el complemento y el paquete de datos funcionen de la misma manera,
+                pero debido a las diferencias entre las versiones, hay cambios menores que no afectan
+                significativamente la experiencia del juego.
+            </p>
+        </section>
+        <section>
+            <h2 id="downloads" class="subtitle">Descragas</h2>
+            <p>
+                ¡Descarga aquí las modificación de Minecraft "Si tocas el bloque, mueres"!
+            </p>
+            <div>
+                <h3 id="lastest" class="subtitle">Última versión - versión 1.2.11 (en prueba):</h3>
+                <ul>
+                    <li>
+                        Código fuente:
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/archive/refs/tags/v1.2.11-test.zip">descarga desde GitHub</a> -
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/tag/v1.2.11-test">Página de la versión en GitHub</a> -
+                        <a target="_blank" href="https://n9.cl/0pq77">Descarga con anuncios</a>
+                    </li>
+                    <li>
+                        Complemento para Minecraft Bedrock:
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/download/v1.2.11-test/IfTouchTheBlockDie-v1.2.11.mcaddon">Descarga desde GitHub</a> -
+                        <a target="_blank" href="https://n9.cl/znrwz">Descarga con anuncios</a>
+                    </li>
+                    <li>
+                        Paquete de datos para Minecraft Java:
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/download/v1.2.11-test/IfTouchTheBlockDieDP-v1.2.11.zip">Descarga desde GitHub</a> -
+                        <a target="_blank" href="https://n9.cl/nuc44">Descarga con anuncios</a>
+                    </li>
+                    <li>
+                        Paquete de texturas para Minecraft Java:
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/download/v1.2.11-test/IfTouchTheBlockDieRP-v1.2.11.zip">Descarga desde GitHub</a> -
+                        <a target="_blank" href="https://n9.cl/e8rpc">Descarga con anuncios</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 id="v1p2p10" class="subtitle">Versión 1.2.10 (en prueba):</h3>
+                <ul>
+                    <li>
+                        Código fuente:
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/archive/refs/tags/v1.2.10-test.zip">Descarga desde GitHub</a> -
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/tag/v1.2.10-test">Página de la versión en GitHub</a> -
+                        <a target="_blank" href="https://n9.cl/h0dqf">Descarga con anuncios</a>
+                    </li>
+                    <li>
+                        Complemento para Minecraft Bedrock:
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/download/v1.2.10-test/IfTouchTheBlockDie-v1.2.10.mcaddon">Descarga desde GitHub</a> -
+                        <a target="_blank" href="https://n9.cl/q214d">Descarga con anuncios</a>
+                    </li>
+                    <li>
+                        Paquete de datos para Minecraft Java:
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/download/v1.2.10-test/IfTouchTheBlockDieDP-v1.2.10.zip">Descarga desde GitHub</a> -
+                        <a target="_blank" href="https://n9.cl/ivl7n">Descarga con anuncios</a>
+                    </li>
+                    <li>
+                        Paquete de texturas para Minecraft Java:
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/download/v1.2.10-test/IfTouchTheBlockDieRP-v1.2.10.zip">Descarga desde GitHub</a> -
+                        <a target="_blank" href="https://n9.cl/o1fj1">Descarga con anuncios</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 id="v1p2p4" class="subtitle">Versión 1.2.4 (en prueba):</h3>
+                <ul>
+                    <li>
+                        Código fuente:
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/archive/refs/tags/v1.2.4-test.zip">Descarga desde GitHub</a> -
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/tag/v1.2.4-test">Página de la versión en GitHub</a> -
+                        <a target="_blank" href="https://n9.cl/4qqiw">Descarga con anuncios</a>
+                    </li>
+                    <li>
+                        Complemento para Minecraft Bedrock:
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/download/v1.2.4-test/IfTouchTheBlockDie-v1.2.4.mcaddon">Descarga desde GitHub</a> -
+                        <a target="_blank" href="https://n9.cl/ykp2i">Descarga con anuncios</a>
+                    </li>
+                    <li>
+                        Paquete de datos para Minecraft Java:
+                        <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/download/v1.2.4-test/IfTouchTheBlockDieDP-v1.2.4.zip">Descarga desde GitHub</a> -
+                        <a target="_blank" href="https://n9.cl/fwpi2x">Descarga con anuncios</a>
+                    </li>
+                    <li>
+                        Paquete de texturas para Minecraft Java: <a href="">No disponible</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script>
+    <script>linkvertise(359782, {
+        whitelist: [
+            "https://n9.cl/"
+        ],
+        blacklist: []});</script>
+    <script src="../src/js/index.js"></script>
+</body>
+</html>
