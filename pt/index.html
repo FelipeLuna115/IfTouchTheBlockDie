@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>If Touch The Block, Die</title>
+    <title>Se toque no bloco, morra</title>
     <link rel="shortcut icon" href="../src/img/pack_icon.png">
     <link rel="stylesheet" href="../src/css/index.css">
 </head>
@@ -11,12 +11,12 @@
     <nav>
         <span onclick="ChangeNavbarStatus()" class="flex-right pointer hover-color">
             <img src="../src/img/pack_icon.png" alt="mod icon" class="icon">
-            <h1>If Touch The Block, die</h1>
+            <h1>Se toque no bloco, morra</h1>
         </span>
         <span id="navbarElements" onclick="ChangeNavbarStatus()" hidden>
-            <a onclick="Goto('#aboutAddon')" class="pointer hover-color">About</a>
+            <a onclick="Goto('#aboutAddon')" class="pointer hover-color">Sobre</a>
             <span class="with-subsections">
-                <a onclick="Goto('#howToConfigure')" class="pointer hover-color">How to configure</a>
+                <a onclick="Goto('#howToConfigure')" class="pointer hover-color">Como configurar</a>
                 <ul class="subsection">
                     <li>
                         <a onclick="Goto('#minecraftBedrockConfig')" class="pointer hover-color">Minecraft Bedrock</a>
@@ -27,50 +27,50 @@
                 </ul>
             </span>
             <span class="with-subsections">
-                <a onclick="Goto('#gameModes')" class="pointer hover-color">Game modes</a>
+                <a onclick="Goto('#gameModes')" class="pointer hover-color">Modos de jogo</a>
                 <ul class="subsection">
                     <li>
-                        <a onclick="Goto('#allBlocks')" class="pointer hover-color">All blocks</a>
+                        <a onclick="Goto('#allBlocks')" class="pointer hover-color">Todos os blocos</a>
                     </li>
                     <li>
-                        <a onclick="Goto('#allOverworld')" class="pointer hover-color">All overworld</a>
+                        <a onclick="Goto('#allOverworld')" class="pointer hover-color">Todo mundo superior</a>
                     </li>
                     <li>
-                        <a onclick="Goto('#allNether')" class="pointer hover-color">All nether</a>
+                        <a onclick="Goto('#allNether')" class="pointer hover-color">Todo inferno</a>
                     </li>
                     <li>
-                        <a onclick="Goto('#allDirts')" class="pointer hover-color">All dirts</a>
+                        <a onclick="Goto('#allDirts')" class="pointer hover-color">Todas sujeira</a>
                     </li>
                     <li>
-                        <a onclick="Goto('#allStones')" class="pointer hover-color">All stones</a>
+                        <a onclick="Goto('#allStones')" class="pointer hover-color">Todas pedras</a>
                     </li>
                     <li>
-                        <a onclick="Goto('#individualBlocks')" class="pointer hover-color">Individual blocks</a>
+                        <a onclick="Goto('#individualBlocks')" class="pointer hover-color">Blocos individuais</a>
                     </li>
                 </ul>
             </span>
             <span class="with-subsections">
-                <a onclick="Goto('#notes')" class="pointer hover-color">Notes</a>
+                <a onclick="Goto('#notes')" class="pointer hover-color">Notas</a>
                 <ul class="subsection">
                     <li>
-                        <a onclick="Goto('#spawnNote')" class="pointer hover-color">Whilst spawning...</a>
+                        <a onclick="Goto('#spawnNote')" class="pointer hover-color">Enquanto desova...</a>
                     </li>
                     <li>
-                        <a onclick="Goto('#parityNote')" class="pointer hover-color">Parity...</a>
+                        <a onclick="Goto('#parityNote')" class="pointer hover-color">Paridade...</a>
                     </li>
                 </ul>
             </span>
             <span class="with-subsections">
-                <a onclick="Goto('#downloads')" class="pointer hover-color">Downloads</a>
+                <a onclick="Goto('#downloads')" class="pointer hover-color">downloads</a>
                 <ul class="subsection">
                     <li>
-                        <a onclick="Goto('#lastest')" class="pointer hover-color">Latest version (1.2.11)</a>
+                        <a onclick="Goto('#lastest')" class="pointer hover-color">Versão mais recente (1.2.11)</a>
                     </li>
                     <li>
-                        <a onclick="Goto('#v1p2p10')" class="pointer hover-color">version 1.2.10</a>
+                        <a onclick="Goto('#v1p2p10')" class="pointer hover-color">versão 1.2.10</a>
                     </li>
                     <li>
-                        <a onclick="Goto('#v1p2p4')" class="pointer hover-color">version 1.2.4</a>
+                        <a onclick="Goto('#v1p2p4')" class="pointer hover-color">versão 1.2.4</a>
                     </li>
                 </ul>
             </span>
@@ -78,96 +78,99 @@
     </nav>
     <div class="content" onclick="HiddeNavbar()">
         <section>
-            <h2 id="aboutAddon" class="flex-center subtitle">About the Add-on / DataPack</h2>
+            <h2 id="aboutAddon" class="flex-center subtitle">Sobre o complemento / Pacote do dados</h2>
             <p>
-                "If touch the block, die" is an Add-on and DataPack for Minecraft Bedrock and Java Edition
-                (hereafter referred to as the Minecraft Mod).
+                "Se toque no bloco, morra" é um complemento e Pacote do Dados para Minecraft Bedrock e
+                Java Edition (Minecraft Modificação a partir de agora).
             </p>
             <p>
-                This Minecraft Mod is a mini-game where you cannot step on a selected list of blocks,
-                depending on the game mode you choose.
-                If you step on a forbidden block, you will instantly die.
+                Esta Minecraft Modificação é um minijogo onde você não pode pisar em uma lista selecionada de blocos,
+                Dependendo do modo de jogo que você escolher.
+                Se você pisar em um bloco proibido, você morrerá imediatamente.
             </p>
         </section>
         <section>
-            <h2 class="subtitle flex-center" id="howToConfigure">How to configure the mod</h2>
+            <h2 class="subtitle flex-center" id="howToConfigure">Como configurar o modificação</h2>
             <p>
-                The Minecraft Mod can be configured differently on each platform.
-                Below, I'll explain how to configure it for each version.
+                A Minecraft modificação pode ser configurada de maneira diferente em cada plataforma.
+                Abaixo, explicarei como configurá -lo para cada versão.
             </p>
             <h3 class="subtitle" id="minecraftBedrockConfig">Minecraft Bedrock</h3>
             <p>
-                To configure this Add-on for Minecraft Bedrock, go to the settings area under the
-                "behavior pack" section and select the "settings" option for the Add-on.
+                Para configurar este complemento para o Minecraft Bedrock, vá para a área de configurações sob o
+                seção "Comportamento Pack" e selecione a opção "Configurações" para o complemento.
             </p>
             <figure class="img-fig">
-                <img class="img pointer" src="../src/img/mod-config-bedrock-1.png" onclick="OpenDocument('../src/img/mod-config-bedrock-1.png')" alt="Minecraft Bedrock behavior packs section screenshot">
+                <img class="img pointer" src="../src/img/mod-config-bedrock-1.png" onclick="OpenDocument('../src/img/mod-config-bedrock-1.png')" alt="Minecraft Bedrock Pacotes do Comportamento Seção Captura de tela">
                 <figcaption>
-                    Minecraft Bedrock behavior packs section.
+                    Seção de pacotes de comportamento de Minecraft Bedrock.
                 </figcaption>
             </figure>
             <p>
-                When you click the "settings" icon, a window will open with a slider.
-                You can use this slider to change the game mode of the Add-on (crimson nylium by default).
+                Quando você clica no ícone "Configurações", uma janela será aberta com um controle deslizante.
+                Você pode usar esse controle deslizante para alterar o modo de jogo do complemento
+                (Nicélio distorcido por padrão).
             </p>
             <figure class="img-fig">
                 <img class="img pointer" src="../src/img/mod-config-bedrock-2.png" onclick="OpenDocument('../src/img/mod-config-bedrock-2.png')" alt="Minecraft Bedrock add-on config slider screenshot">
                 <figcaption>
-                    Minecraft Bedrock Add-on configuration slider.
+                    Controle deslizante de configuração do Minecraft Bedrock.
                 </figcaption>
             </figure>
             <p>
-                <span class="important">Note:</span>
-                For the Add-on to function correctly, you need to enable two experimental features (experiments):
+                <span class="important">Nota:</span>
+                Para que o complemento funcione corretamente, você precisa ativar do jogabilidade experimental
+                (experimentos):
                 <ul>
-                    <li>Upcoming Creator Features</li>
-                    <li>Beta APIs</li>
+                    <li>Próximos Recursos de Criador</li>
+                    <li>APIs beta</li>
                 </ul>
                 <figure class="img-fig">
-                    <img class="img pointer" src="../src/img/mod-config-bedrock-3.png" onclick="OpenDocument('../src/img/mod-config-bedrock-3.png')" alt="Minecraft Bedrock experimental features required screenshot">
+                    <img class="img pointer" src="../src/img/mod-config-bedrock-3.png" onclick="OpenDocument('../src/img/mod-config-bedrock-3.png')" alt="Minecraft Bedrock Experimental Caracters Necessário de captura de tela">
                     <figcaption>
-                        Minecraft Bedrock experimental features required.
+                        Minecraft Bedrock Experimental Caracters necessários.
                     </figcaption>
                 </figure>
             </p>
             <br><br><br>
             <h3 class="subtitle" id="minecraftJavaConfig">Minecraft Java</h3>
             <p>
-                The Minecraft Java DataPack can only be configured in-game using custom items that you
-                receive upon spawning. To get these items, hotbar slots 9, 8, and 7 must be empty.
+                Minecraft Java Pacote do Dados só pode ser configurado no jogo usando itens personalizados
+                que você recebe Após a desova.
+                Para obter esses itens, os slots de Barra rápida 9, 8 e 7 devem estar vazios.
             </p>
             <figure class="img-fig">
-                <img class="img pointer" src="../src/img/mod-config-java-1.png" onclick="OpenDocument('../src/img/mod-config-java-1.png')" alt="Minecraft Java configuration items - in-game screenshot">
+                <img class="img pointer" src="../src/img/mod-config-java-1.png" onclick="OpenDocument('../src/img/mod-config-java-1.png')" alt="Itens de configuração do Minecraft Java - Captura de tela do jogo">
                 <figcaption>
-                    Minecraft Java configuration items.
+                    Itens de configuração do Minecraft Java.
                 </figcaption>
             </figure>
             <p>
-                <span class="subtitle">Prev game mode:</span>
-                This item allows you to change to the previous game mode (numerically).
+                <span class="subtitle">"Prev game mode" (Modo de jogo anterior):</span>
+                Este item permite que você mude para o modo de jogo anterior (numericamente).
             </p>
             <figure class="img-fig">
-                <img class="img pointer" src="../src/img/mod-config-java-2.png" onclick="OpenDocument('../src/img/mod-config-java-2.png')" alt="Minecraft Java previous game mode item - in-game screenshot">
+                <img class="img pointer" src="../src/img/mod-config-java-2.png" onclick="OpenDocument('../src/img/mod-config-java-2.png')" alt="Anterior Iten do modo de jogo do Minecraft Java - Captura de tela do jogo">
                 <figcaption>
-                    Minecraft Java previous game mode item.
+                    Anterior Item do modo de jogo do Minecraft Java.
                 </figcaption>
             </figure>
             <p>
-                <span class="subtitle">Reset game mode:</span>
-                This item resets the game mode to the first one (numerically): "All Blocks."
+                <span class="subtitle">"Reset game mode" (Redefinir o modo de jogo):</span>
+                Este item redefine o modo de jogo para o primeiro (numericamente): "All Blocks" (Todos os blocos).
             </p>
             <figure class="img-fig">
-                <img class="img pointer" src="../src/img/mod-config-java-3.png" onclick="OpenDocument('../src/img/mod-config-java-3.png')" alt="Minecraft Java reset game mode item - in-game screenshot">
+                <img class="img pointer" src="../src/img/mod-config-java-3.png" onclick="OpenDocument('../src/img/mod-config-java-3.png')" alt="Redefinir iten do modo de jogo do Minecraft Java - Captura de tela do jogo">
                 <figcaption>
-                    Minecraft Java reset game mode item.
+                    Redefinir item do modo de jogo do Minecraft Java.
                 </figcaption>
             </figure>
             <p>
-                <span class="subtitle">Next game mode:</span>
-                This item allows you to switch to the next game mode (numerically).
+                <span class="subtitle">"Next game mode" (Próximo modo de jogo):</span>
+                Este item permite que você mude para o próximo modo de jogo (numericamente).
             </p>
             <figure class="img-fig">
-                <img class="img pointer" src="../src/img/mod-config-java-4.png" onclick="OpenDocument('../src/img/mod-config-java-4.png')" alt="Minecraft Java next game mode item - in-game screenshot">
+                <img class="img pointer" src="../src/img/mod-config-java-4.png" onclick="OpenDocument('../src/img/mod-config-java-4.png')" alt="Próximo Iten do modo de jogo do Minecraft Java - Captura de tela do jogo">
                 <figcaption>
                     Minecraft Java next game mode item.
                 </figcaption>
@@ -178,21 +181,21 @@
                 which is included in the downloads for Minecraft Java.
             </p>
             <figure class="img-fig">
-                <img class="img pointer" src="../src/img/mod-config-java-5.png" onclick="OpenDocument('../src/img/mod-config-java-5.png')" alt="Minecraft Java resources pack active screenshot">
+                <img class="img pointer" src="../src/img/mod-config-java-5.png" onclick="OpenDocument('../src/img/mod-config-java-5.png')" alt="Captura de tela do pacote de recursos ativo do Minecraft Java">
                 <figcaption>
-                    Minecraft Java resources pack active.
+                    Pacote de recursos ativo do Minecraft Java.
                 </figcaption>
             </figure>
         </section>
         <section>
             <h2 id="gameModes" class="flex-center subtitle">Game Modes</h2>
             <p>
-                This Minecraft Mod includes 24 available game modes to choose from. These are the game modes:
+                This Minecraft Modificação includes 24 available game modes to choose from. These are the game modes:
             </p>
             <ul>
                 <li>
                     <span id="allBlocks" class="bold subtitle">All Blocks:</span> This mode contains all the available blocks on the
-                    Minecraft Mod, which are:
+                    Minecraft Modificação, which are:
                     <ol>
                         <li>Magma</li><li>Netherrack</li><li>Soul Sand</li><li>Soul Soil</li><li>Crimson nyliym</li><li>Warped nylium</li>
                         <li>Ice</li><li>Packed Ice</li><li>Blue Ice</li><li>Clay</li><li>Deepslate</li><li>Dirt</li><li>Grass</li><li>Coarse Dirt</li>
@@ -202,7 +205,7 @@
                 </li>
                 <li>
                     <span id="allOverworld" class="bold subtitle">All Overworld:</span> This mode contains all the available blocks on
-                    the Minecraft Mod that spawns naturally on overworld, which are:
+                    the Minecraft Modificação that spawns naturally on overworld, which are:
                     <ol>
                         <li>Ice</li><li>Packed Ice</li><li>Blue Ice</li><li>Clay</li><li>Deepslate</li><li>Dirt</li><li>Grass</li><li>Coarse Dirt</li>
                         <li>Gravel</li><li>Sand</li><li>Snow</li><li>Stone</li><li>Mud</li><li>Muddy Mangrove Roots</li><li>Sculk blocks</li>
@@ -211,7 +214,7 @@
                 </li>
                 <li>
                     <span id="allNether" class="bold subtitle">All Nether:</span> This mode contains all the available blocks on the
-                    Minecraft Mod that spawns naturally on nether, which are:
+                    Minecraft Modificação that spawns naturally on nether, which are:
                     <ol>
                         <li>Magma</li><li>Netherrack</li><li>Soul Sand</li><li>Soul Soil</li><li>Crimson nyliym</li>
                         <li>Warped nylium</li><li>Basalt</li><li>Polished basalt</li>
@@ -219,7 +222,7 @@
                 </li>
                 <li>
                     <span id="allDirts" class="bold subtitle">All Dirts:</span> This mode contains all the available "dirt-type"
-                    blocks on the Minecraft Mod that spawns naturally, which are:
+                    blocks on the Minecraft Modificação that spawns naturally, which are:
                     <ol>
                         <li>Soul Sand</li><li>Soul Soil</li><li>Crimson nyliym</li><li>Warped nylium</li>
                         <li>Clay</li><li>Dirt</li><li>Grass</li><li>Coarse Dirt</li>
@@ -229,7 +232,7 @@
                 </li>
                 <li>
                     <span id="allStones" class="bold subtitle">All Stones:</span> This mode contains all the available "stone-type"
-                    blocks on the Minecraft Mod that spawns naturally, which are:
+                    blocks on the Minecraft Modificação that spawns naturally, which are:
                     <ol>
                         <li>Magma</li><li>Netherrack</li><li>Ice</li><li>Packed Ice</li><li>Blue Ice</li>
                         <li>Deepslate</li><li>Stone</li><li>Endstone</li>
@@ -237,10 +240,9 @@
                     </ol>
                 </li>
                 <li>
-                    <span id="individualBlocks" class="bold subtitle">A mode for every block:</span> This mode contains each
-                    available block in the Minecraft Mod itself, with no additional blocks. For example,
-                    the grass mode contains just the grass block, but there are some exceptions that include more blocks of
-                    the same type:
+                    <span id="individualBlocks" class="bold subtitle">A mode for every block:</span> This mode contains each available block
+                    on the Minecraft Modificação itself, with no more blocks, for example, the grass mode contains just the
+                    grass block, but there are some exceptions that includes more blocks of the same type:
                     <ol>
                         <li><span class="subtitle">Mud:</span> This mode contains the mud and muddy mangrove roots.</li>
                         <li>
@@ -261,9 +263,9 @@
         <section>
             <h2 id="notes" class="important">Notes:</h2>
             <p>
-                In this section, you'll find important notes to consider while playing the Minecraft Mod.
+                In this section, you'll find important notes to consider while playing the Minecraft Modificação.
             </p>
-            <h3 id="spawnNote" class="subtitle">Whilst spawning...</h3>
+            <h3 id="spawnNote" class="subtitle">While spawning...</h3>
             <p>
                 If the chosen mode includes blocks where you usually spawn, like grass or dirt, as kill blocks,
                 you'll die upon spawning. To avoid an infinite loop of death, a wooden platform will be created at
@@ -278,17 +280,17 @@
             </figure>
             <h3 id="parityNote" class="subtitle">Parity...</h3>
             <p>
-                I did my best to make the Add-on and DataPack function the same, but due to differences between the versions,
-                there are minor changes that don't significantly affect the gameplay experience.
+                I did my best to make the Add-on and Pacote do dados work the same, but due to differences between the versions,
+                there are minor changes that don't significantly affect the game experience.
             </p>
         </section>
         <section>
             <h2 id="downloads" class="subtitle">Downloads</h2>
             <p>
-                Download "If touch the block, die" Minecraft Mod here!
+                Download here "If touch the block, die" Minecraft Modificação!
             </p>
             <div>
-                <h3 id="lastest" class="subtitle">Latest version - version 1.2.11 (test):</h3>
+                <h3 id="lastest" class="subtitle">Lastest version - version 1.2.11 (test):</h3>
                 <ul>
                     <li>
                         Source code:
@@ -302,7 +304,7 @@
                         <a target="_blank" href="https://n9.cl/znrwz">Ads download</a>
                     </li>
                     <li>
-                        Minecraft Java DataPack:
+                        Minecraft Java Pacote do dados:
                         <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/download/v1.2.11-test/IfTouchTheBlockDieDP-v1.2.11.zip">GitHub download</a> -
                         <a target="_blank" href="https://n9.cl/nuc44">Ads download</a>
                     </li>
@@ -328,7 +330,7 @@
                         <a target="_blank" href="https://n9.cl/q214d">Ads download</a>
                     </li>
                     <li>
-                        Minecraft Java DataPack:
+                        Minecraft Java Pacote do dados:
                         <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/download/v1.2.10-test/IfTouchTheBlockDieDP-v1.2.10.zip">GitHub download</a> -
                         <a target="_blank" href="https://n9.cl/ivl7n">Ads download</a>
                     </li>
@@ -354,7 +356,7 @@
                         <a target="_blank" href="https://n9.cl/ykp2i">Ads download</a>
                     </li>
                     <li>
-                        Minecraft Java DataPack:
+                        Minecraft Java Pacote do dados:
                         <a target="_blank" href="https://github.com/Luna115-onCode/IfTouchTheBlockDie/releases/download/v1.2.4-test/IfTouchTheBlockDieDP-v1.2.4.zip">GitHub download</a> -
                         <a target="_blank" href="https://n9.cl/fwpi2x">Ads download</a>
                     </li>
