@@ -93,6 +93,10 @@ h1 {
     margin-right: 2vw;
 }
 
+.border-red {
+    border: solid rgb(126, 0, 0) 2px;
+}
+
 .img {
     width: 100%;
     min-height: 10vh;
@@ -113,7 +117,7 @@ h1 {
     font-weight: 100;
 }
 
-.flex-right {
+.flex-icon {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -125,6 +129,11 @@ h1 {
 .flex-center {
     display: flex;
     justify-content: center;
+}
+
+.flex-right {
+    display: flex;
+    justify-content: right;
 }
 
 /* HTML: <div class="loader"></div> */

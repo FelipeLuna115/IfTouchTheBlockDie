@@ -7,6 +7,10 @@ function SetLanguage() {
     let url = window.location.href.replace("index.html", "");
 
     setTimeout(() => {
-        window.location.href = url + pageLang;
+        if (["es", "en"].includes(pageLang)) {
+            window.location.href = url + pageLang;
+            return
+        }
+        window.location.href = url + "en-def";
     }, 2000);
 }
